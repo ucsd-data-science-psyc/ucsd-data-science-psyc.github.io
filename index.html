@@ -1,2 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .collapsible {
+    background-color: #eeeeee;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  .active, .collapsible:hover {
+    background-color: #dddddd;
+  }
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+</style>
+</head>
+ 
+<body>
 <h1> Hello, world </h1>
 <span> Future home of UCSD Data Science Club homepage </span>
+
+<button class="collapsible">Spring 2019</button>
+<div class="content">
+  <p>
+    <ul>
+      <li>05/08/2019 - Erik - Setting up Github account and website</li>
+      <li>05/15/2019 - Tim - ML on GPUs</li>
+      <li>05/22/2019 - Rose - RMarkdown, making code public / Discussing <a href = "https://royalsocietypublishing.org/doi/pdf/10.1098/rsos.180448" target="_blank">this</a> paper</li>
+      <li>05/29/2019 - Lauren - web scraping in python with <a href = "https://www.crummy.com/software/BeautifulSoup/" target="_blank">beautifulsoup</a> </li>
+      <li>06/05/2019 - Erik/Thijs - Using APIs</li>
+      <li>06/12/2019 - TBD - TBD</li>
+    </ul>
+  </p>
+</div>
+
+<button class="collapsible">Fall 2018</button>
+<div class="content">
+  <p>
+    <ul>
+      <li>10/03/2018 - Brendan - NLP in Python</li>
+      <li>10/10/2018 - No speaker</li>
+      <li>10/17/2018 - Angus - ggplot</li>
+      <li>10/24/2018 - Erik - git/github</li>
+      <li>10/31/2018 - Tim - Making a package in Python (animal vocalizations)</li>
+      <li>11/07/2018 - No speaker</li>
+      <li>11/14/2018 - No speaker</li>
+      <li>11/21/2018 - No meeting</li>
+      <li>11/28/2018 - Jarrett - hierarchical bayesian modeling w STAN</li>
+      <li>12/05/2018 - No meeting (Teaching prof job talk)</li>
+    </ul>
+  </p>
+</div>
+
+<button class="collapsible">Spring 2018</button>
+<div class="content">
+  <p>
+    <ul>
+      <li>04/10/2018 - Brendan - Jupyter notebooks and Python</li>
+      <li>04/17/2018 - Thijs - Rshiny</li>
+      <li>04/24/2018 - Jarrett - data frames in python (pandas and numpy)</li>
+      <li>05/01/2018 - Tim - TensorFlow</li>
+      <li>05/08/2018 - No speaker</li>
+      <li>05/14/2018 - Maddie - Data Visualization with GraphPad Prism</li>
+      <li>05/22/2018 - No speaker</li>
+      <li>05/29/2018 - Ethan - Papaja</li>
+      <li>06/05/2018 - No speaker</li>
+    </ul>
+  </p>
+</div>
+
+<script type="text/javascript">
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
